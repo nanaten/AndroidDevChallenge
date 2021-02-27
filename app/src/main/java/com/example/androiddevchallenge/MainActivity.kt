@@ -49,8 +49,8 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.navigate
+import androidx.navigation.compose.rememberNavController
 import com.example.androiddevchallenge.model.Pet
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
@@ -69,7 +69,6 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun NavGraph(viewModel: MainViewModel, startDestination: String = "main") {
     val navController = rememberNavController()
-
     NavHost(
         navController = navController,
         startDestination = startDestination
@@ -78,7 +77,12 @@ fun NavGraph(viewModel: MainViewModel, startDestination: String = "main") {
         composable(
             "detail/{petId}",
             arguments = listOf(navArgument("petId") { type = NavType.IntType })
-        ) { Detail(viewModel, it.arguments?.getInt("petId", 1) ?: throw Exception("Invalid Id")) }
+        ) {
+            Detail(
+                viewModel,
+                it.arguments?.getInt("petId", 1) ?: throw Exception("Invalid Id")
+            )
+        }
     }
 }
 
@@ -86,7 +90,12 @@ fun NavGraph(viewModel: MainViewModel, startDestination: String = "main") {
 fun MainScreen(viewModel: MainViewModel, navController: NavHostController) {
     LazyColumn(Modifier.background(Color.White)) {
         items(viewModel.pets) { pet ->
-            PetList(pet = pet, onClick = { navController.navigate("detail/${pet.id}") })
+            PetList(
+                pet = pet,
+                onClick = {
+                    navController.navigate("detail/${pet.id}")
+                }
+            )
         }
     }
 }
