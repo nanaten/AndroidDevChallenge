@@ -23,29 +23,34 @@ import com.example.androiddevchallenge.model.Pet
 class MainViewModel : ViewModel() {
     val pets: List<Pet> = listOf<Pet>(
         Pet(
-            1,
-            "Suzu",
-            Identifier.CAT,
-            "American Short Hair",
-            Gender.FEMALE,
-            "Brown",
-            1,
-            "Nullam porttitor lacus at turpis. " +
-                    "Donec posuere metus vitae ipsum. Aliquam non mauris.",
-            R.drawable.cat_1
+            id = 1,
+            name = "Suzu",
+            identifier = Identifier.CAT,
+            type = "American Short Hair",
+            gender = Gender.FEMALE,
+            color = "Brown",
+            age = 1,
+            memo = """
+                Nullam porttitor lacus at turpis.
+                Donec posuere metus vitae ipsum. Aliquam non mauris.
+                    """,
+            image = R.drawable.cat_1
         ),
         Pet(
-            2,
-            "Maya",
-            Identifier.CAT,
-            "Siamese",
-            Gender.FEMALE,
-            "Black",
-            6,
-            "In hac habitasse platea dictumst." +
-                    "Morbi vestibulum, velit id pretium iaculis," +
-                    "diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-            R.drawable.cat_2
+            id = 2,
+            name = "Maya",
+            identifier = Identifier.CAT,
+            type = "Siamese",
+            gender = Gender.FEMALE,
+            color = "Black",
+            age = 6,
+            memo = """
+                In hac habitasse platea dictumst.
+                Morbi vestibulum, velit id pretium iaculis,
+                diam erat fermentum justo,
+                nec condimentum neque sapien placerat ante. Nulla justo.
+                """,
+            image = R.drawable.cat_2
         ),
         Pet(
             5,
@@ -55,9 +60,11 @@ class MainViewModel : ViewModel() {
             Gender.MALE,
             "Brown",
             2,
-            "In quis justo." +
-                    "Maecenas rhoncus aliquam lacus." +
-                    "Morbi quis tortor id nulla ultrices aliquet.",
+            """
+                In quis justo.
+                Maecenas rhoncus aliquam lacus.
+                Morbi quis tortor id nulla ultrices aliquet.
+                """,
             R.drawable.puppy_1
         ),
         Pet(
@@ -68,8 +75,10 @@ class MainViewModel : ViewModel() {
             Gender.MALE,
             "Gray",
             4,
-            "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst." +
-                    "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+            "Curabitur gravida nisi at nibh." +
+                    "In hac habitasse platea dictumst." +
+                    "Aliquam augue quam, sollicitudin vitae," +
+                    "consectetuer eget, rutrum at, lorem.",
             R.drawable.cat_3
         ),
         Pet(

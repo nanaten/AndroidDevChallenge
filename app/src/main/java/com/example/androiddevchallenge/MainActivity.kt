@@ -190,4 +190,5 @@ fun Detail(viewModel: MainViewModel, petId: Int) {
             Modifier.padding(16.dp)
         )
     }
+    
 }
