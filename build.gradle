@@ -37,7 +37,6 @@ plugins {
 subprojects {
     repositories {
         google()
-        jcenter()
     }
 
     apply plugin: 'com.diffplug.spotless'
