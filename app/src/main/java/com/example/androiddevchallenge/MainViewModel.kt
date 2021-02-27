@@ -33,7 +33,7 @@ class MainViewModel : ViewModel() {
             memo = """
                 Nullam porttitor lacus at turpis.
                 Donec posuere metus vitae ipsum. Aliquam non mauris.
-                    """.trimIndent(),
+            """.trimIndent(),
             image = R.drawable.cat_1
         ),
         Pet(
@@ -49,7 +49,7 @@ class MainViewModel : ViewModel() {
                 Morbi vestibulum, velit id pretium iaculis,
                 diam erat fermentum justo,
                 nec condimentum neque sapien placerat ante. Nulla justo.
-                """.trimIndent(),
+            """.trimIndent(),
             image = R.drawable.cat_2
         ),
         Pet(
@@ -64,7 +64,7 @@ class MainViewModel : ViewModel() {
                 In quis justo.
                 Maecenas rhoncus aliquam lacus.
                 Morbi quis tortor id nulla ultrices aliquet.
-                """.trimIndent(),
+            """.trimIndent(),
             R.drawable.puppy_1
         ),
         Pet(
