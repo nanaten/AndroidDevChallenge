@@ -33,7 +33,7 @@ class MainViewModel : ViewModel() {
             memo = """
                 Nullam porttitor lacus at turpis.
                 Donec posuere metus vitae ipsum. Aliquam non mauris.
-                    """,
+                    """.trimIndent(),
             image = R.drawable.cat_1
         ),
         Pet(
@@ -49,7 +49,7 @@ class MainViewModel : ViewModel() {
                 Morbi vestibulum, velit id pretium iaculis,
                 diam erat fermentum justo,
                 nec condimentum neque sapien placerat ante. Nulla justo.
-                """,
+                """.trimIndent(),
             image = R.drawable.cat_2
         ),
         Pet(
@@ -64,7 +64,7 @@ class MainViewModel : ViewModel() {
                 In quis justo.
                 Maecenas rhoncus aliquam lacus.
                 Morbi quis tortor id nulla ultrices aliquet.
-                """,
+                """.trimIndent(),
             R.drawable.puppy_1
         ),
         Pet(
@@ -75,10 +75,12 @@ class MainViewModel : ViewModel() {
             Gender.MALE,
             "Gray",
             4,
-            "Curabitur gravida nisi at nibh." +
-                    "In hac habitasse platea dictumst." +
-                    "Aliquam augue quam, sollicitudin vitae," +
-                    "consectetuer eget, rutrum at, lorem.",
+            """
+                Curabitur gravida nisi at nibh.
+                In hac habitasse platea dictumst.
+                Aliquam augue quam, sollicitudin vitae
+                consectetuer eget, rutrum at, lorem.
+            """.trimIndent(),
             R.drawable.cat_3
         ),
         Pet(
@@ -89,8 +91,10 @@ class MainViewModel : ViewModel() {
             Gender.MALE,
             "Brown",
             2,
-            "Aliquam quis turpis eget elit sodales scelerisque." +
-                    "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
+            """
+                Aliquam quis turpis eget elit sodales scelerisque.
+                Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+            """.trimIndent(),
             R.drawable.cat_4
         )
     )
