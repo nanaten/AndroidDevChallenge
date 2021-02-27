@@ -7,7 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-A cute pet got lost. Please look for them.
+It is an application that searches for adoption of pets.　Cute kittens and puppies are waiting for you.
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
