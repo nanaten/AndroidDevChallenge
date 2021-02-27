@@ -1,9 +1,9 @@
 package com.example.androiddevchallenge
 
 import androidx.lifecycle.ViewModel
-import com.example.androiddevchallenge.model.Pet
 import com.example.androiddevchallenge.model.Gender
 import com.example.androiddevchallenge.model.Identifier
+import com.example.androiddevchallenge.model.Pet
 
 class MainViewModel : ViewModel() {
     val pets: List<Pet> = listOf<Pet>(

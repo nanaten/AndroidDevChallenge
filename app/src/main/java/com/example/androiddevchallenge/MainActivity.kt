@@ -103,7 +103,8 @@ fun MainScreen(viewModel: MainViewModel, navController: NavHostController) {
 @Composable
 fun PetList(pet: Pet, onClick: () -> Unit) {
     Card(
-        elevation = 4.dp, modifier = Modifier
+        elevation = 4.dp,
+        modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp)
     ) {
@@ -184,6 +185,9 @@ fun Detail(viewModel: MainViewModel, petId: Int) {
             Text("breed: ${pet.type}", Modifier.padding(top = 8.dp))
             Text("color: ${pet.color}", Modifier.padding(top = 8.dp))
         }
-        Text(text = pet.memo, Modifier.padding(16.dp))
+        Text(
+            text = pet.memo,
+            Modifier.padding(16.dp)
+        )
     }
 }
